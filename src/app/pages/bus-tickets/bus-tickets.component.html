@@ -1,0 +1,32 @@
+<div class="container-fluid py-2" style="height: 90vh;">
+    <h6><b>Bus Ticket ></b> {{ from }} to {{ to }} bus</h6>
+    <hr class="my-1">
+    <h5><b>{{ from }} to {{ to }} bus</b></h5>
+    <hr class="my-1">
+    <form action="/bus-tickets" method="get">
+        <div class="row">
+            <div class="col-sm-2 col-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control form-control-sm" name="from" id="fromSearch" placeholder="From" value="{{from}}">
+                    <label for="fromSearch">From</label>
+                </div>
+            </div>
+            <div class="col-sm-2 col-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control form-control-sm" name="to" id="toSearch" placeholder="To" value="{{to}}">
+                    <label for="toSearch">To</label>
+                </div>
+            </div>
+            <div class="col-sm-2 col-6">
+                <div class="form-floating">
+                    <input type="date" class="form-control form-control-sm" name="date" id="dateSearch" placeholder="Date" value="{{date}}">
+                    <label for="dateSearch">Date</label>
+                </div>
+            </div>
+            <div class="col-sm-2 col-6">
+                <button class="btn btn-sm btn-outline-dark w-100 py-3">Modify</button>
+            </div>
+        </div>
+    </form>
+    <hr class="my-1">
+</div>
